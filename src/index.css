@@ -15,6 +15,12 @@ ul,
 ol {
   list-style: none;
 }
+.control__btns {
+  margin: 5vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   width: 96%;
   max-width: 1140px;

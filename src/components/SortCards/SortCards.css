@@ -1,0 +1,18 @@
+.sort__btns {
+  position: relative;
+  left: 20px;
+}
+.sort__btns button {
+  cursor: pointer;
+  padding: 0;
+  height: 35px;
+}
+.sort__btns button svg {
+  stroke-width: 50px;
+  font-size: 20px;
+}
+.arrow__btn,
+.form__button {
+  border: none;
+  background-color: transparent;
+}

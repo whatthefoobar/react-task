@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import Card from './components/Card/Card';
 import Cards from './components/Cards/Cards';
 import SearchForm from './components/SearchForm/SearchForm';
+import SortCards from './components/SortCards/SortCards';
 
 function App() {
   const [users, setUsers] = useState(null);
@@ -25,9 +25,13 @@ function App() {
 
   return (
     <div className="App">
-      <SearchForm className="card__search" term={term} setTerm={setTerm} />
+      <div className="control__btns">
+        <SortCards />
+        <SearchForm className="card__search" term={term} setTerm={setTerm} />
+      </div>
+
       <div className="container">
-        {isLoading ? ( // if is not loading render this section
+        {isLoading ? (
           <h1 className="loading"> Loading...</h1>
         ) : (
           <Cards
@@ -43,5 +47,4 @@ function App() {
   );
 }
 
-// users={users.filter(user => ((user.name.first).toLowerCase()).includes(term.toLowerCase()))}
 export default App;

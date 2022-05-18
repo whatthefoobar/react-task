@@ -1,27 +1,11 @@
-.searchForm__container {
-  margin: 5vh auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btns {
+/* .searchForm {
   position: relative;
-  left: 20px;
+} */
+.searchForm label {
+  position: absolute;
+  left: -99999px;
 }
-.btns button {
-  cursor: pointer;
-  padding: 0;
-  height: 35px;
-}
-.btns button svg {
-  stroke-width: 50px;
-  font-size: 20px;
-}
-.arrow__btn,
-.form__button {
-  border: none;
-  background-color: transparent;
-}
+
 .searchForm .form__button {
   position: relative;
   left: 20px;
