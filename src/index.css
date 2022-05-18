@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ul,
+ol {
+  list-style: none;
+}
+.container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.card__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
