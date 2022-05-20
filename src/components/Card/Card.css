@@ -21,10 +21,10 @@
 
 .card__image {
   border-radius: 50%;
-  width: 80px;
+  width: 100px;
   height: auto;
   position: relative;
-  top: -50px;
+  top: -60px;
 }
 
 .card__info {
