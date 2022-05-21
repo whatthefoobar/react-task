@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await fetch('https://randomuser.me/api/?results=6');
+        const res = await fetch('https://randomuser.me/api/?results=8');
         const data = await res.json();
 
         setUsers(data.results);

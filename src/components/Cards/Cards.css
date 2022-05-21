@@ -1,0 +1,6 @@
+.card__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
