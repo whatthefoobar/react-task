@@ -27,9 +27,13 @@ function App() {
   return (
     <div className="App">
       <div className="control__btns">
-        <SortCards />
-        <SearchForm className="card__search" term={term} setTerm={setTerm} />
-        <ToggleCardView />
+        <div className="control__btns--left">
+          <SortCards />
+          <SearchForm className="card__search" term={term} setTerm={setTerm} />
+        </div>
+        <div className="control__btns--right">
+          <ToggleCardView />
+        </div>
       </div>
 
       <div className="container">

@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiGrid } from 'react-icons/fi';
 import { BsList } from 'react-icons/bs';
 
 const ToggleCardView = () => {
+  const [isGrid, setIsGrid] = useState('true');
+
+  const toggleBtn = () => {
+    setIsGrid(!isGrid);
+  };
+
   return (
     <div>
-      <FiGrid />
-      <BsList />
+      {isGrid ? <FiGrid onClick={toggleBtn} /> : <BsList onClick={toggleBtn} />}
     </div>
   );
 };
