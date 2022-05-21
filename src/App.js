@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import Cards from './components/Cards/Cards';
 import SearchForm from './components/SearchForm/SearchForm';
 import SortCards from './components/SortCards/SortCards';
@@ -26,7 +25,7 @@ function App() {
     } catch (error) {
       console.log(error);
     }
-    currentOffset += 10;
+    currentOffset += 8;
   };
 
   const handleScroll = (e) => {

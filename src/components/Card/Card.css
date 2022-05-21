@@ -17,18 +17,18 @@
   height: 170px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 20%;
+  border-bottom-right-radius: 17%;
 }
 .card__background::before {
   content: '';
   position: absolute;
   background-color: white;
-  bottom: 132px;
+  bottom: 102px;
   left: 0;
-  height: 50px;
+  height: 80px;
   width: 70px;
-  border-top-left-radius: 26px;
-  /* box-shadow: 0 -25px 0 0 #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
+  border-top-left-radius: 45%;
+  /* box-shadow: 0 -29px 0 0 #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
 }
 
 .card__image {
