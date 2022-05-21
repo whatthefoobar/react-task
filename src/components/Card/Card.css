@@ -1,7 +1,8 @@
 .card {
-  width: 210px;
+  /* width: 210px; */
+  position: relative;
   height: 342px;
-  background-color: black;
+  background-color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -18,6 +19,29 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20%;
 }
+.card__background::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  bottom: 132px;
+  left: 0;
+  /* left: -25px; */
+  height: 50px;
+  width: 70px;
+  border-top-left-radius: 26px;
+  box-shadow: 0 -25px 0 0 #a7b8a8;
+}
+/* .card__background::before {
+  content: '';
+  position: relative;
+
+  background-color: #0074d9;
+  bottom: -105px;
+  left: -25px;
+  height: 50px;
+  width: 30px;
+  border-top-left-radius: 25px;
+} */
 
 .card__image {
   border-radius: 50%;

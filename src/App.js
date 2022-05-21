@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Cards from './components/Cards/Cards';
 import SearchForm from './components/SearchForm/SearchForm';
 import SortCards from './components/SortCards/SortCards';
+import ToggleCardView from './components/ToggleCardView/ToggleCardView';
 
 function App() {
   const [users, setUsers] = useState(null);
@@ -11,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await fetch('https://randomuser.me/api/?results=50');
+        const res = await fetch('https://randomuser.me/api/?results=6');
         const data = await res.json();
 
         setUsers(data.results);
@@ -28,6 +29,7 @@ function App() {
       <div className="control__btns">
         <SortCards />
         <SearchForm className="card__search" term={term} setTerm={setTerm} />
+        <ToggleCardView />
       </div>
 
       <div className="container">
