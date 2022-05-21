@@ -10,7 +10,7 @@ li:nth-child(1n) .card__background {
 }
 
 li:nth-child(1n) .card__background::before {
-  box-shadow: 0 -31px 0 0 #a7b8a8;
+  box-shadow: 0 -37px 0 0 #a7b8a8;
 }
 
 li:nth-child(2n) .card__background {
@@ -18,12 +18,12 @@ li:nth-child(2n) .card__background {
 }
 
 li:nth-child(2n) .card__background::before {
-  box-shadow: 0 -31px 0 0 #e1d3c7;
+  box-shadow: 0 -37px 0 0 #e1d3c7;
 }
 li:nth-child(3n) .card__background {
   background-color: #e8cdad;
 }
 
 li:nth-child(3n) .card__background::before {
-  box-shadow: 0 -31px 0 0 #e8cdad;
+  box-shadow: 0 -37px 0 0 #e8cdad;
 }
