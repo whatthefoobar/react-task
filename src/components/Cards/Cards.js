@@ -4,7 +4,7 @@ import './Cards.css';
 
 const Cards = ({ users }) => {
   return (
-    <ul className="card__gallery">
+    <ul className="card__gallery grid">
       {users &&
         users.map((user, index) => (
           <Card

@@ -1,4 +1,5 @@
-.card {
+/*Grid Card*/
+.card--grid {
   /* width: 210px; */
   position: relative;
   height: 342px;
@@ -9,7 +10,7 @@
   border-radius: 20px;
 }
 
-.card__background {
+.card--grid .card__background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +20,7 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 42px;
 }
-.card__background::before {
+.card--grid .card__background::before {
   content: '';
   position: absolute;
   background-color: white;
@@ -31,7 +32,7 @@
   /* box-shadow: 0 -37px 0 0 #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
 }
 
-.card__image {
+.card--grid .card__image {
   border-radius: 50%;
   width: 100px;
   height: auto;
@@ -39,7 +40,7 @@
   top: -60px;
 }
 
-.card__info {
+.card--grid .card__info {
   background-color: white;
   border-top-left-radius: 20%;
   padding: 10px;
@@ -47,7 +48,7 @@
   border-bottom-right-radius: 20px;
 }
 
-h1 {
+.card--grid h1 {
   color: #292929;
   font-family: 'Karla', sans-serif;
   font-size: 18px;
@@ -55,14 +56,88 @@ h1 {
   line-height: 21px;
 }
 
-p {
+.card--grid p {
   color: #292929;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   position: relative;
   bottom: 40px;
 }
-.card__social-icons {
+.card--grid .card__social-icons {
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+/*List Card*/
+.card--list {
+  /* width: 210px; */
+  position: relative;
+  height: 220px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card--list .card__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
+  height: 73px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 42px;
+}
+.card--list .card__background::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  bottom: 91.5px;
+  left: 0;
+  height: 90px;
+  width: 70px;
+  border-top-left-radius: 42px;
+  /* box-shadow: 0 -37px 0 0 #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
+}
+
+.card--list .card__image {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+  position: relative;
+  top: -60px;
+}
+
+.card--list .card__info {
+  background-color: white;
+  border-top-left-radius: 20%;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card--list h1 {
+  color: #292929;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.card--list p {
+  color: #292929;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  position: relative;
+  bottom: 40px;
+}
+.card--list .card__social-icons {
   position: relative;
   bottom: 30px;
   display: flex;

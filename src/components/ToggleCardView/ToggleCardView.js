@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import { FiGrid } from 'react-icons/fi';
 import { BsList } from 'react-icons/bs';
 import './ToggleCardView.css';
+import { useAPI } from '../../Store';
 
 const ToggleCardView = () => {
-  const [isGrid, setIsGrid] = useState('true');
+  const { isGrid, setIsGrid } = useAPI();
 
   const toggleBtn = () => {
     setIsGrid(!isGrid);
