@@ -1,74 +1,64 @@
 /*List Card*/
 .card--list {
-  /* width: 210px; */
-  position: relative;
-  height: 220px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  height: 100px;
   border-radius: 20px;
-}
-
-.card--list .card__background {
+  background-color: #a7b8a8;
+  border-radius: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
-  height: 73px;
-  border-top-left-radius: 20px;
+  justify-content: start;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 42px;
-}
-.card--list .card__background::before {
-  content: '';
-  position: absolute;
-  background-color: white;
-  bottom: 91.5px;
-  left: 0;
-  height: 90px;
-  width: 70px;
-  border-top-left-radius: 42px;
-  /* box-shadow: 0 -37px 0 0 #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
-}
-
-.card--list .card__image {
-  border-radius: 50%;
-  width: 100px;
-  height: auto;
-  position: relative;
-  top: -60px;
-}
-
-.card--list .card__info {
-  background-color: white;
-  border-top-left-radius: 20%;
-  padding: 10px;
-  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.card--list h1 {
+.card--list .card__background {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 73px;
+}
+
+.card--list .card__info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 42px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 40px 0 50px;
+}
+.card__info .card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card--list .card__image {
+  border-radius: 50%;
+  width: 80px;
+  padding: 10px;
+  position: relative;
+  right: -30px;
+}
+
+.card--list .card__details h2 {
   color: #292929;
   font-family: 'Karla', sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
+  margin: 0;
 }
 
-.card--list p {
+.card--list .card__details p {
   color: #292929;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
-  position: relative;
-  bottom: 40px;
+  margin: 0;
 }
 .card--list .card__social-icons {
-  position: relative;
-  bottom: 30px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  font-size: 1.2rem;
+  gap: 10px;
 }
