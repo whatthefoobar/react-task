@@ -1,3 +1,9 @@
 .toggle__card {
   cursor: pointer;
 }
+.toggle__btn {
+  border: none;
+}
+.toggle__btn svg {
+  font-size: 23px;
+}

@@ -12,7 +12,13 @@ const ToggleCardView = () => {
 
   return (
     <div className="toggle__card">
-      {isGrid ? <FiGrid onClick={toggleBtn} /> : <BsList onClick={toggleBtn} />}
+      <button type="submit" className="toggle__btn">
+        {isGrid ? (
+          <FiGrid onClick={toggleBtn} />
+        ) : (
+          <BsList onClick={toggleBtn} />
+        )}
+      </button>
     </div>
   );
 };
