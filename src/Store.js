@@ -1,11 +1,12 @@
 import React, { useContext, useState, useEffect, createContext } from 'react';
-// import axios from 'axios';
 
 const Context = createContext();
+// console.log(<SortCards></SortCards>);
 
 export function ContextProvider({ children }) {
   let currentOffset = 0;
   const [users, setUsers] = useState([]);
+  const [filter, setFilter] = useState('asc');
   const [isGrid, setIsGrid] = useState('true');
   const [isLoading, setIsLoading] = useState('true');
 
@@ -18,12 +19,15 @@ export function ContextProvider({ children }) {
       const data = await res.json();
       data.results.forEach((p) => eightUsers.push(p));
       setUsers((prevUsers) => [...prevUsers, ...eightUsers]);
+
       setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
     currentOffset += 8;
   };
+
+  console.log(users);
 
   const handleScroll = (e) => {
     const scrollHeight = e.target.documentElement.scrollHeight;
@@ -37,13 +41,32 @@ export function ContextProvider({ children }) {
 
   useEffect(() => {
     fetchUsers();
+
     window.addEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (filter === 'asc') {
+      // code to ascend sort
+      let usersF = users.sort((a, b) => (a.name.first > b.name.first ? 1 : -1));
+      setFilter('');
+      console.log('sorted ascending', usersF);
+    } else if (filter === 'desc') {
+      // code to descend sort
+      let usersF = users
+        .sort((a, b) => (a.name.first > b.name.first ? 1 : -1))
+        .reverse();
+      console.log('sorted descending', usersF);
+      setFilter('');
+    }
+  }, [filter]);
 
   return (
     <Context.Provider
       value={{
         users,
+        filter,
+        setFilter,
         isGrid,
         setIsGrid,
         isLoading,

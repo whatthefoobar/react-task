@@ -1,42 +1,24 @@
 import React from 'react';
-import { FiMail } from 'react-icons/fi';
-import { BiPhoneCall } from 'react-icons/bi';
 import './Card.css';
+import { useAPI } from '../../Store';
+import GridCard from '../GridCard/GridCard';
+import ListCard from '../ListCard/ListCard';
 
 const Card = ({ name, img, city }) => {
   //if grid return grid card <GridCard> else retun list card <ListCard>
 
+  let { isGrid, setIsGrid } = useAPI();
+  console.log(isGrid);
+
   return (
-    //grid card
-    // <li className="card--grid">
-    //   <div className="card__background">
-    //     <h1>{name}</h1>
-    //   </div>
-
-    //   <div className="card__info">
-    //     <img src={img} className="card__image" alt="user" />
-    //     <p className="card__city">{city}</p>
-    //     <div className="card__social-icons">
-    //       <FiMail />
-    //       <BiPhoneCall />
-    //     </div>
-    //   </div>
-    // </li>
-    //list card
-    <li className="card--grid">
-      <div className="card__background">
-        <h1>{name}</h1>
-      </div>
-
-      <div className="card__info">
-        <img src={img} className="card__image" alt="user" />
-        <p className="card__city">{city}</p>
-        <div className="card__social-icons">
-          <FiMail />
-          <BiPhoneCall />
-        </div>
-      </div>
-    </li>
+    <>
+      {/* {isGrid ? <h2>Grid</h2> : <h2>List</h2>} */}
+      {isGrid ? (
+        <GridCard name={name} img={img} city={city} />
+      ) : (
+        <ListCard name={name} img={img} city={city} />
+      )}
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Cards from './components/Cards/Cards';
 import SearchForm from './components/SearchForm/SearchForm';
 import SortCards from './components/SortCards/SortCards';
@@ -7,8 +7,7 @@ import { useAPI } from './Store.js';
 
 function App() {
   const [term, setTerm] = useState('');
-
-  const { users, isLoading } = useAPI();
+  let { users, isLoading } = useAPI();
 
   return (
     <div className="App">
