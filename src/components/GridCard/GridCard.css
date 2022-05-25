@@ -13,7 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
+  background-color: #a7b8a8;
+  /*instead of hardcoding it here i set color in Cards.css for every n element*/
   height: 170px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -23,12 +24,13 @@
   content: '';
   position: absolute;
   background-color: white;
-  bottom: 82px;
+  bottom: 98.8px;
   left: 0;
-  height: 90px;
-  width: 70px;
+  height: 80px;
+  width: 90px;
   border-top-left-radius: 42px;
-  /* box-shadow: 0 -37px 0 0  #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
+  /* box-shadow: 0 -37px 0 0 rgb(178, 134, 141); */
+  /*instead of hardcoding it here i set color in Cards.css for every n element*/
 }
 
 .card--grid .card__image {
@@ -52,10 +54,10 @@
   content: '';
   position: absolute;
   /* background-color: pink; */
-  top: 100px;
+  top: 81.3px;
   right: 0;
-  height: 70px;
-  width: 65px;
+  height: 82px;
+  width: 110px;
   border-bottom-right-radius: 42px;
   box-shadow: 0 37px 0 0 white;
 }
@@ -66,6 +68,7 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 21px;
+  z-index: 2;
 }
 
 .card--grid p {
@@ -77,11 +80,11 @@
 }
 .card--grid .card__social-icons {
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
