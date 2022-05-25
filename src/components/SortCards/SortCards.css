@@ -5,6 +5,7 @@
 .sort__btns button {
   cursor: pointer;
   padding: 0;
+  margin: 0;
   height: 35px;
 }
 .sort__btns button svg {

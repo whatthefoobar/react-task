@@ -1,7 +1,7 @@
 /*List Card*/
 .card--list {
   position: relative;
-  height: 90px;
+  height: 100px;
   border-radius: 20px;
   /* background-color: #a7b8a8; */
   border-radius: 20px;
@@ -58,7 +58,7 @@
 }
 .card--list .card__image {
   border-radius: 50%;
-  width: 80px;
+  width: 85px;
   padding: 10px;
   position: relative;
   right: -15px;
@@ -81,7 +81,7 @@
   margin: 0;
 }
 .card--list .card__social-icons {
-  font-size: 16px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;

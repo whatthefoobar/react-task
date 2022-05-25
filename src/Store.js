@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect, createContext } from 'react';
 
 const Context = createContext();
-// console.log(<SortCards></SortCards>);
 
 export function ContextProvider({ children }) {
   let currentOffset = 0;

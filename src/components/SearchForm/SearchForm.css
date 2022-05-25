@@ -12,7 +12,7 @@
 }
 
 .searchForm input {
-  padding-left: 20px;
+  padding-left: 30px;
   height: 20px;
   width: 250px;
   border: none;
@@ -23,4 +23,8 @@
 
 .searchForm input[type='text']::placeholder {
   padding-left: 20px;
+  font-size: 16px;
+}
+.searchForm input[type='text']:focus::-webkit-input-placeholder {
+  color: transparent;
 }

@@ -4,6 +4,7 @@
 .toggle__btn {
   border: none;
   background-color: transparent;
+  padding-right: 20px;
 }
 .toggle__btn svg {
   font-size: 23px;
