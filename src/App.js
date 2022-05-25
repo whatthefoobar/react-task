@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Cards from './components/Cards/Cards';
+import Loading from './components/Loading/Loading';
 import SearchForm from './components/SearchForm/SearchForm';
 import SortCards from './components/SortCards/SortCards';
 import ToggleCardView from './components/ToggleCardView/ToggleCardView';
@@ -23,7 +24,8 @@ function App() {
 
       <div className="container">
         {isLoading ? (
-          <h1 className="loading"> Loading...</h1>
+          // <h1 className="loading"> Loading...</h1>
+          <Loading />
         ) : (
           <Cards
             users={users.filter((user) =>
