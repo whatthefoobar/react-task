@@ -13,3 +13,5 @@ Things I spent most time on:
 Used:
 
 - useContext for state management
+- react Icons for icons
+- Flexbox and CSS Grid for layout
