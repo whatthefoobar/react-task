@@ -17,7 +17,7 @@ function App() {
           <SearchForm className="card__search" term={term} setTerm={setTerm} />
         </div>
         <div className="control__btns--right">
-          <ToggleCardView />
+          <ToggleCardView className="card__toggle" />
         </div>
       </div>
 

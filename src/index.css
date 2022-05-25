@@ -29,5 +29,18 @@ body {
   margin: 0 auto;
 }
 
-/* @media (max-width: 390px) {
-} */
+@media (max-width: 470px) {
+  .control__btns {
+    flex-direction: column;
+    position: relative;
+  }
+  .control__btns--left {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .control__btns--right {
+    position: absolute;
+    right: 0px;
+    top: 55px;
+  }
+}

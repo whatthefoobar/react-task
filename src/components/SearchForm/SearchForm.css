@@ -28,3 +28,18 @@
 .searchForm input[type='text']:focus::-webkit-input-placeholder {
   color: transparent;
 }
+
+@media (max-width: 470px) {
+  .searchForm input {
+    padding-left: 30px;
+    width: 365px;
+  }
+  .searchForm input[type='text']::placeholder {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .searchForm .form__button {
+    left: 15px;
+    bottom: -17px;
+  }
+}
