@@ -3,6 +3,7 @@ React card gallery task:
 To start:
 
 - to start page locally on your computer open terminal and npm install && npm run start
+- preview here react-cards-task.netlify.app/
 
 Things I spent most time on:
 
