@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAPI } from '../../Store';
-import Card from '../Card/Card';
+import GridCard from '../GridCard/GridCard';
+import ListCard from '../ListCard/ListCard';
 import './Cards.css';
 
 const Cards = ({ users }) => {
@@ -8,14 +9,23 @@ const Cards = ({ users }) => {
   return (
     <ul className={isGrid ? 'card__gallery grid' : 'card__gallery list'}>
       {users &&
-        users.map((user, index) => (
-          <Card
-            key={index}
-            name={`${user.name.first} ${user.name.last}`}
-            img={user.picture.large}
-            city={user.location.city}
-          />
-        ))}
+        users.map((user, index) =>
+          isGrid ? (
+            <GridCard
+              key={index}
+              name={`${user.name.first} ${user.name.last}`}
+              img={user.picture.large}
+              city={user.location.city}
+            />
+          ) : (
+            <ListCard
+              key={index}
+              name={`${user.name.first} ${user.name.last}`}
+              img={user.picture.large}
+              city={user.location.city}
+            />
+          )
+        )}
     </ul>
   );
 };

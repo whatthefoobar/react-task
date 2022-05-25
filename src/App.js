@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Cards from './components/Cards/Cards';
 import SearchForm from './components/SearchForm/SearchForm';
 import SortCards from './components/SortCards/SortCards';

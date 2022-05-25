@@ -1,9 +1,8 @@
 /*Grid Card*/
 .card--grid {
-  /* width: 210px; */
   position: relative;
   height: 342px;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -24,12 +23,12 @@
   content: '';
   position: absolute;
   background-color: white;
-  bottom: 91.5px;
+  bottom: 82px;
   left: 0;
   height: 90px;
   width: 70px;
   border-top-left-radius: 42px;
-  /* box-shadow: 0 -37px 0 0 #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
+  /* box-shadow: 0 -37px 0 0  #a7b8a8; */ /*instead of hardcoding it here i set color in Cards.css for every n element*/
 }
 
 .card--grid .card__image {
@@ -44,8 +43,21 @@
   background-color: white;
   border-top-left-radius: 20%;
   padding: 10px;
+  padding-bottom: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.card--grid .card__info::before {
+  content: '';
+  position: absolute;
+  background-color: pink;
+  top: 100px;
+  right: 0;
+  height: 70px;
+  width: 65px;
+  border-bottom-right-radius: 42px;
+  box-shadow: 0 37px 0 0 white;
 }
 
 .card--grid h1 {
@@ -59,7 +71,7 @@
 .card--grid p {
   color: #292929;
   font-family: 'Lato', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   position: relative;
   bottom: 40px;
 }
