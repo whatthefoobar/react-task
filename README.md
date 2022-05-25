@@ -12,4 +12,4 @@ Things I spent most time on:
 
 Used:
 
--useContext for state management
+- useContext for state management
