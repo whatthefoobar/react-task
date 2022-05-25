@@ -20,6 +20,9 @@
   outline: none;
   background-color: #ebe9e4;
 }
+.searchForm input[type='text'] {
+  font-size: 20px;
+}
 
 .searchForm input[type='text']::placeholder {
   padding-left: 20px;
@@ -34,10 +37,11 @@
     padding-left: 30px;
     width: 365px;
   }
-  .searchForm input[type='text']::placeholder {
-    padding-left: 20px;
-    font-size: 16px;
+  .searchForm input[type='text'] {
+    padding-left: 40px;
+    font-size: 20px;
   }
+
   .searchForm .form__button {
     left: 15px;
     bottom: -17px;
