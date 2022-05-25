@@ -87,3 +87,19 @@
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 450px) {
+  .card--list .card__info {
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .card--list .card__social-icons {
+    align-self: flex-end;
+  }
+  .card--list .card__image {
+    padding: 5px;
+  }
+}
