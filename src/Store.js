@@ -11,20 +11,20 @@ export function ContextProvider({ children }) {
   const [isLoading, setIsLoading] = useState('true');
 
   const fetchUsers = async () => {
-    const tenUsers = [];
+    const sixUsers = [];
     try {
       const res = await fetch(
-        'https://randomuser.me/api/?results=10&offset=${currentOffset}'
+        'https://randomuser.me/api/?results=6&offset=${currentOffset}'
       );
       const data = await res.json();
-      data.results.forEach((p) => tenUsers.push(p));
-      setUsers((prevUsers) => [...prevUsers, ...tenUsers]);
+      data.results.forEach((p) => sixUsers.push(p));
+      setUsers((prevUsers) => [...prevUsers, ...sixUsers]);
 
       setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
-    currentOffset += 10;
+    currentOffset += 6;
   };
 
   console.log(users);
