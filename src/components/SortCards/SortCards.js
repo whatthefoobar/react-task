@@ -13,7 +13,6 @@ const SortCards = ({ sortAscending, sortDescending }) => {
         className="arrow__btn"
         onClick={(filter) => {
           setFilter('desc');
-          console.log('descending');
         }}
       >
         <AiOutlineArrowDown />
@@ -22,7 +21,6 @@ const SortCards = ({ sortAscending, sortDescending }) => {
         className="arrow__btn"
         onClick={(filter) => {
           setFilter('asc');
-          console.log('ascending');
         }}
       >
         <AiOutlineArrowUp />
