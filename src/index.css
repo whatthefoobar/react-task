@@ -36,7 +36,7 @@ body {
   }
   .control__btns--left {
     flex-direction: column-reverse;
-    align-items: start;
+    align-items: flex-start;
   }
   .control__btns--right {
     position: absolute;

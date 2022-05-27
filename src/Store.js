@@ -3,6 +3,7 @@ import React, { useContext, useState, useEffect, createContext } from 'react';
 const Context = createContext();
 
 export function ContextProvider({ children }) {
+  // eslint-disable-next-line
   let currentOffset = 0;
   const [users, setUsers] = useState([]);
   const [filter, setFilter] = useState('asc');
@@ -13,7 +14,7 @@ export function ContextProvider({ children }) {
     const sixUsers = [];
     try {
       const res = await fetch(
-        'https://randomuser.me/api/?results=6&offset=${currentOffset}'
+        `https://randomuser.me/api/?results=6&offset=${currentOffset}`
       );
       const data = await res.json();
       data.results.forEach((p) => sixUsers.push(p));
@@ -40,8 +41,8 @@ export function ContextProvider({ children }) {
 
   useEffect(() => {
     fetchUsers();
-
     window.addEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -58,6 +59,7 @@ export function ContextProvider({ children }) {
       console.log('sorted descending', usersF);
       setFilter('');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter]);
 
   return (
